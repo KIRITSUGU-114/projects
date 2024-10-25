@@ -1,0 +1,396 @@
+/*Fuentes Tipograficas*/
+@font-face {
+    font-family:"machina-inkrapt-ultraBold";
+    font-weight: 800;
+    font-display: optional;
+    font-style: normal;
+    src: url(/public_html/font/PPNeueMachina-InktrapUltrabold.woff2) format("woff2");
+    src: url(/public_html/font/PPNeueMachina-InktrapUltrabold.woff) format("woff");
+}
+
+@font-face {
+    font-family:"machina-inkrapt-light";
+    font-weight: 300;
+    font-display: optional;
+    font-style: normal;
+    src: url(/public_html/font/PPNeueMachina-InktrapLight.woff2) format("woff2");
+    src: url(/public_html/font/PPNeueMachina-InktrapLight.woff) format("woff");
+}
+
+/*Estilos generales*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html{
+    width: 100%;
+    height: auto;
+    background-color: #E2E2E2;
+    overflow-x: hidden;
+
+}   
+
+/*Desktop---------------------------------------------------------------------*/
+@media screen and (min-width: 1024px) {
+    /*Tipografía*/
+    h1, 
+    h3,
+    h4.work__item-project-title{
+        font-family: "machina-inkrapt-ultraBold";
+        line-height: 100%;
+    }
+
+    h1{ 
+        font-size: 4.4rem;
+        text-transform: uppercase;
+    }
+
+    h2,
+    .hero__span{
+        font-family: "machina-inkrapt-light";
+        color: #1B2021;
+        line-height: 100%;
+    }
+
+    h2{
+        font-size: 1.5rem;
+        width: 100%;
+        border-bottom: solid #1B2021 1px;
+        padding-bottom: 5px ;
+    }
+
+    h3,
+    .material-symbols-outlined{font-size: 2rem;}
+
+    h3{
+        width: 100%;
+        padding-bottom: 5px ;
+    }
+    
+    h4.skills__knowledge-title,
+    .hero__description,
+    .nav-bar__link,
+    .skills__item-tech,
+    .skills__knowledge-item,
+    .skills__get-resume{
+        font-family: "Overpass", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        color: #1B2021;
+    }
+
+    h4.skills__knowledge-title{font-size: 1.3rem;}
+    h4.work__item-project-title{
+        font-size: 2.3rem;
+        color: #1B2021;
+    }
+
+
+    .hero__description,
+    .skills__item-tech,
+    .skills__knowledge-item,
+    .skills__get-resume{font-size: 1rem;}
+    
+    .nav-bar__link{
+        font-size: 1.3rem;
+        text-decoration: none;
+    }
+    
+    .hero__span{
+        font-size: 1.3rem;
+        border-top: solid #1B2021 1px;
+        border-left: solid #1B2021 1px;
+        border-right: solid #1B2021 1px;
+        border-radius: 8px 8px 0 0;
+        padding: 10px;        
+    }
+
+    .skills__item-tech{
+        border: solid #1B2021 1px;
+        border-radius: 8px;
+        background-color: rgba(27, 32 , 33, 0.05);
+        padding: 10px;   
+    }
+
+    .work__item-project-date,
+    .work__item-description,
+    .work__item-technologies-used,
+    .work__item-more,
+    .work__item-less{
+        font-family: "Overpass", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+        color: #1B2021;
+        font-size: 1rem;        
+    }
+
+    .work__item-project-role{
+        font-family: "Overpass", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+        color: #1B2021;
+        font-size: 1.3rem;
+    }    
+    
+    .work__item-more{text-decoration: underline;}
+
+    .work__item-more .material-symbols-outlined{font-size: 1rem;}
+
+    .work__item-less{display: none;}
+
+    .skills__knowledge-item{padding-bottom: 10px;}
+    
+    .skills__get-resume{
+        width: auto;
+        text-decoration: none;
+        padding: 10px;
+        border: solid #1B2021 1px;
+        border-radius: 8px;
+        }
+
+    .nav-bar__item{
+        display: inline-block;
+        padding: 0 10px;
+    }
+
+    /*Imagenes----------------------------------------------------------------*/
+    .header__logo{
+        width: 200px;
+        height: auto;
+    }
+    
+    .hero__image{
+        width: 400px;
+        height: auto;
+        border-radius: 12px;
+        box-shadow: 0 0 10px rgba(27, 32, 33, 0.25);
+    }
+    
+    .work__item-image{
+        width: 38%;
+        height: auto;
+        border-radius: 12px 12px 0 0;
+    }
+
+    /*Contenedores------------------------------------------------------------*/
+    body,
+    header,
+    main,
+    .hero,
+    .hero__presentation,
+    .hero__level,
+    .skills,
+    .skills__group,
+    .skills__item,
+    .skills__knowledge,
+    .work,
+    .work__item,
+    .work__item-content,
+    .work__item-presentation,
+    .work__item-frame2,
+    .work__item-more-about{display: flex;}
+    
+    header,
+    .hero,
+    .hero__level,
+    .work__item-frame2{flex-flow: row nowrap;}
+    
+    .skills,
+    .skills__item,
+    .work__item{flex-flow: row wrap;}
+
+    body,
+    main,
+    .hero__presentation,
+    .skills__group,
+    .skills__knowledge,
+    .work,
+    .work__item-content,
+    .work__item-presentation,
+    .work__item-more-about{flex-flow: column nowrap;}
+
+    .hero__presentation,
+    .skills__group,
+    .skills__item,
+    .skills__knowledge,
+    .work__item-presentation,
+    .work__item-more-about{
+        justify-content: start;
+        align-items: start;
+    }
+
+    body,
+    header,
+    main,
+    .hero,
+    .hero__level{align-items: center;}
+
+    header,
+    main,
+    .hero,
+    .hero__level,
+    .skills,
+    .skills__item,
+    .work__item,
+    .work__item-presentation,
+    .work__item-frame2,
+    .work__item-more-about{width: 100%;}
+
+    .hero__presentation,
+    .skills,
+    .skills__group,
+    .skills__knowledge,
+    .work,
+    .work__item{gap: 2rem;}
+
+    .hero,
+    .skills,
+    .work{
+        padding-left: 4.5rem;
+        padding-right: 4.5rem;
+    }
+
+
+    body{   
+        justify-content: start;
+        font-family: "Overpass", sans-serif;
+        font-size: 16px;
+        line-height: 125%;   
+    }
+
+    header{
+        justify-content: space-between;
+        padding: 0 4.5rem;
+        height: 100px;  
+        background-color: rgba(226, 226, 226, 0.5);
+        backdrop-filter: blur(48px);
+        -webkit-backdrop-filter: blur(48px);
+        box-shadow: 0 4px 16px rgba(27, 32, 33, 0.1);
+        position: sticky;
+        position: -webkit-sticky;
+        top: 0;
+    }
+    
+    .nav-bar{
+        width: auto;
+        height: auto;
+    }
+    
+    .nav-bar__list{list-style: none;}
+    
+    main{
+        justify-content: start;
+        padding: 0;
+        height: auto; 
+    }
+
+    .hero{
+        justify-content: center;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        gap: 0 2rem;
+        height: calc(100vh - 200px);
+    }
+
+    .hero__presentation{
+        width: calc(100% - 400px);
+        height: auto;
+        overflow-x: hidden;
+    }
+
+    .hero__level{
+        justify-content: end;
+        border-bottom: solid #1B2021 1px;
+    }
+
+    .skills{
+        justify-content: start;
+        align-items: stretch;
+        align-content: start;
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+        height: 70vh;
+    }
+
+    .skills__group{
+        width: calc(60% - 2rem);
+        height: 100%;
+    }
+
+    .skills__item{
+        align-content: start;
+        gap: 1.5rem;
+        height: 30%;    
+        border-bottom: solid #1B2021 1px;
+    }
+
+    .skills__knowledge{width: 40%;}
+    .skills__knowlegde-list{list-style-position: inside;}
+
+    .work{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        height: auto;
+    }
+
+    .work__item{
+        justify-content: center;
+        align-items: stretch;
+        align-content: start;
+        height: auto;
+        padding: 2.5rem 2.5rem 0 2.5rem;
+        border-radius: 12px;
+    }
+
+    .work__item:nth-child(even){background-color: #CFD2CD;} 
+    .work__item:nth-child(odd){background-color: #1B2021;}
+    .work__item:nth-child(odd) h4{color: #E2E2E2;}
+    .work__item:nth-child(odd) h5{color: #E2E2E2;}
+    .work__item:nth-child(odd) h6{color: #E2E2E2;}
+    .work__item:nth-child(odd) p{color: #E2E2E2;}
+    .work__item:nth-child(odd) span{color: #E2E2E2;}
+
+    .work__item-content{
+        justify-content: space-between;
+        align-items: start;
+        width: calc(62% - 2rem);
+    }
+
+    .work__item-presentation{gap: 0.65rem;}
+
+    .work__item-frame2{
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.5rem 0 0.5rem 0;
+    }
+
+    .work__item-more-about{
+        gap: 2.5rem;
+    }
+}
+
+/*Cambios de tamaño de titulo e imagen del Hero*/
+@media screen and (min-width: 1200px){                 /*Hero1*/
+    h1{font-size: 6rem;}
+}
+@media screen and (min-width: 1360px){                 /*Hero2*/
+    h1{font-size: 7.5rem;}
+}
+@media screen and (min-width: 1600px){                 /*Hero3*/
+    h1{font-size: 9rem;}
+    .hero__image{width: 450px;}
+    .hero{height: calc(100vh - 100px);}
+    .hero__presentation{width: calc(100% - 450px);}
+}
+@media screen and (min-width: 1800px){                 /*Hero4*/
+    h1{font-size: 11rem;}
+    .hero__image{width: 500px;}
+    .hero{height: calc(100vh - 100px);}
+    .hero__presentation{width: calc(100% - 500px);}
+}

@@ -1,0 +1,404 @@
+@import url('cabinet-grotesk.css');
+
+@font-face {
+    font-family: "soria";
+    src: url("../fonts/soria/soria-font.ttf");
+    font-weight: 800;
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: "pigeon";
+    src: url("../fonts/pigeon/pigeon-font.otf");
+    font-weight: 100 800;
+    font-display: swap;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+body, html{
+        height: 100%;
+        background-color: #FFFCFA;
+
+}
+
+ul{
+    list-style: none;
+}
+
+header{
+    height: 75px;
+    width: 100%;
+}
+
+header{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #FFE9EA;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.search-bar, .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+    height: 45px;
+}
+
+header figure img{
+    height: 60px;
+    width: auto;
+}
+
+input{
+    width: 84%;
+    height: 100%;
+    border-radius: 5px;
+    border: solid #4B5043 2px;
+    padding-left: 10px;
+    color: #4B5043;
+    background-color: #FFE9EA;
+    font-size: 1.1em;
+    font-family: "CabinetGrotesk-Medium";
+}
+.search-bar button{
+    width: 15%;
+    height: 100%;
+    border-radius: 5px;
+    border: solid #4B5043 2px;
+    background-color: #4B5043;
+    color: #FFE9EA;
+    font-size: 1.1em;
+    font-family: "CabinetGrotesk-Bold";
+    letter-spacing: 1px;
+}
+
+.cart{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    color: #FFE9EA;
+    background-color: #4B5043;
+    width: auto;
+    height: 100%;
+    border: solid #4B5043 2px;
+    border-radius: 5px;
+    padding: 0 60px 0 60px;
+    font-size: 1.1em;
+    font-family: "CabinetGrotesk-Bold";
+    letter-spacing: 1px;
+}
+
+nav{
+    width: auto;
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: start;
+    align-items: center;
+}
+.menu nav li{
+    display: inline;
+    margin-left: 15px;
+
+}
+
+.menu a{
+    background-color: #FFE9EA;
+    color: #4B5043;
+    padding: 0 60px 0 60px;
+    border: solid #4B5043 2px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    padding: 15px 55px;
+    text-decoration: none;
+    font-family: "CabinetGrotesk-Medium";
+}
+
+main{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-flow: column nowrap;
+    width: 100%;
+    height: calc(100vh - 75px);
+    background-image: url("../images/hero-background-image.jpg ");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero h1{
+    color: #FFFCFA;
+    font-size: 10em;
+    margin-top: 10%;
+    font-family: "soria";
+    line-height: 1em;
+}
+.hero h2{
+    color: #FFFCFA;
+    font-size: 2.5em;
+    font-family: "soria";
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.schedule{
+    background-color: #FFE9EA;
+    border: solid #FFE9EA 2px;
+    border-radius: 5px;
+    font-size: 1.7em;
+    margin-bottom: 3%;
+    margin-top: 5%;
+    padding: 15px 150px ;
+    color: #4B5043;
+    text-decoration: none;
+    font-family: "pigeon";
+    letter-spacing: 2px;
+}
+
+.treatments{
+    width: 95%;
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFCFA;
+}
+
+.treatments h3{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: black;
+    font-size: 2.7em;   
+    line-height: 0.8em;
+    font-family: "CabinetGrotesk-Bold";
+    margin-bottom: 5px;
+}
+
+.treatments > p{
+    width: 70%;
+    height: auto;
+    text-align: center;
+    font-size: 1.2em;
+    font-family: "CabinetGrotesk-Medium";
+    margin-bottom: 15px;
+}
+
+.tm-items-wrap{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: end;
+    background-color: #FFFCFA;
+    gap: 30px 30px;
+}
+
+.tm-item{
+    width: 49%;
+    height: 40vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: end;
+    align-items: start;
+    border-radius: 10px;
+}
+
+.tm-1, .tm-2, .tm-3, .tm-4{
+    background-image: url("../images/facial.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.info-wrap{
+    width: 100%;
+    height: auto;
+    background-color: #fffcfa7c;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 0 10px 0;
+    }
+
+.tm-item h2{
+    width: 95%;
+    color: black;
+    font-size: 1.7em;
+    font-family: "CabinetGrotesk-Bold";
+}
+.tm-item p{
+    width: 70%;
+    color: black;
+    font-size: 1.1em;
+    font-family: "CabinetGrotesk-Medium";
+}
+
+.view-all{
+    color: #FFE9EA;
+    padding: 0.6rem 4rem 0.6rem 4rem;
+    background-color: #4B5043;
+    border-radius: 5px;
+    font-family: "CabinetGrotesk-Medium";
+    font-size: 1.2em;
+}
+
+.spaces{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(../images/spaces-background.jpg);
+    background-position: end;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.spaces-header{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 252, 250, 50%);
+    gap: 10px 10px;
+    padding: 10px 0 10px 0;
+    }
+
+.spaces h3{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: black;
+    font-size: 2.7em;    
+    line-height: 0.8em;
+    font-family: "CabinetGrotesk-Bold";
+}
+.spaces p{
+    width: 70%;
+    height: auto;
+    text-align: center;
+    font-size: 1.2em;
+    font-family: "CabinetGrotesk-Medium";
+}
+
+.spaces-wrap{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #fffcfa7a;
+    border-radius: 10px 10px 0 0;
+    backdrop-filter: blur(4px);
+}
+
+.space-item{
+    width: 32%;
+    height: 90%;
+    border-radius: 10px;
+}
+.space-item img{
+    width: 100%;
+    height: 90%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.space-item figcaption{
+    font-size: 2em;
+    font-family: "CabinetGrotesk-Bold";
+}
+.store{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.banner-store{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+    align-items: center;
+    background-image: url(../images/storebg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 15px 0 15px 0;
+}
+
+.banner-store h3{
+    font-size: 2.7em;
+    font-family: "CabinetGrotesk-Black";
+    color: #6F5D4A;
+    letter-spacing: 1px;
+}
+
+.store-items-wrap{
+    width: 100%;
+    height: auto;
+    background-color: #4B5043;
+    gap: 20px 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.store-items-wrap h4{
+    width: 100%;
+    margin-left: 20px;
+    margin-top: 20px;
+
+}
+
+.sc-wrap{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px 20px;
+}
+
+.sc-item{
+    width: 32%;
+    height: 39vh;
+    background-color: #FFE9EA;
+    border-radius: 10px;
+}
