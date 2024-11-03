@@ -51,31 +51,28 @@
             <p class="contact__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sapien justo, vestibulum in metus non, rutrum vehicula metus. Sed pellentesque risus augue, vel sagittis massa dignissim vel. Fusce sit amet dictum tellus. Nulla pulvinar, urna.
             </p>
             <div class="contact__canals">
+                <h3 class="contact__canals-title">Other contact chanels</h3>
                 <p>Busines email: contact@luckyshrub.com</p>
                 <p>Phone: (555) 555 1234</p>
-            </div>
-            <div class="contact__social-networks">
-
             </div>
         </div>
         <div class="form">
             <form action="post" aria-labelledby="form-title">
                 <h2 id="form-title">Share us your idea</h2>
 
-                <label for="name">Full name</label><br>
+                <label for="name">Full name<span class="required"> *</span></label><br>
                 <input type="text" name="name" id="name" required aria-required="true" aria-label="Full name"><br>
 
-                <label for="phone">Phone number</label><br>
-                <input type="number" name="phone" id="phone" required aria-required="true" aria-label="Phone number"><br>
+                <label for="phone">Phone number<span class="required"> *</span></label><br>
+                <input type="phone" name="phone" id="phone" required aria-required="true" aria-label="Phone number"><br>
 
-                <label for="email">Email</label><br>
+                <label for="email">Email<span class="required"> *</span></label><br>
                 <input type="email" name="email" id="email" required aria-required="true" aria-label="Email"><br>
 
-                <label for="message">Message - Share us your idea</label><br>
-                <input type="textarea" name="message" id="message" rows="10" cols="50" required aria-required="true" aria-label="Message - Share us your idea"><br>
+                <label for="message">Message - Share us your idea<span class="required"> *</span></label><br>
+                <textarea name="message" id="message" rows="10" required aria-required="true" aria-label="Message - Share us your idea"></textarea><br>
 
                 <button type="submit" aria-label="Send request">Send request</button>
-
             </form>
         </div>
 </div>
