@@ -1,0 +1,26 @@
+This is my capstone project of the HTML and CSS in-depth certification by Meta. The project itself should be a simple page for an little garden design company called Lucky Shrub based in Arizona, where to demonstrate my understanding about advance HTML and CSS, semantic and meta tags, forms, media elements, interactive css and a little more, of course is a fictitious company. 
+
+But I said to myself, wait a minute, a simple page? Why? Why not create more than a simple page? I have strong understanding of HTML, CSS and JavaScript, I read a lot of documentation in MDN, W3Schools, and google for devs, this certification do not teach me all my knowledge of this technologies so a will create a really beauty, responsive, semantic and accessible page, not just one, a will create four pages.
+
+And well, I made this. In this project I want to demonstrate my skills in this technologies, doing more than a simple page applying my knowledge in:
+
+Advanced HTML and CSS: Creating a clean, structured layout with attention to detail.
+Semantic HTML: Using meaningful tags to improve readability and SEO.
+Responsive Design (Flexbox): Ensuring the site looks great on any device.
+Accessibility and SEO: Making the site more inclusive and easier to find.
+CSS Interactivity: Adding smooth transitions and hover effects for a better user experience.
+
+
+
+
+
+
+
+
+
+
+
+Thanks for reviewing! I hope you enjoy the project as much as I enjoyed building it.
+===================================================================================
+
+ 
