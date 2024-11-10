@@ -516,7 +516,7 @@ li {
   #contact-title {
     display: block;
     text-transform: uppercase;
-    font-size: clamp(4rem, 4vw + 1rem, 5.5rem);
+    font-size: clamp(3.5rem, 3.5vw + 1rem, 5.5rem);
     font-weight: 900;
     text-align: start;
   }
