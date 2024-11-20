@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "inkrapt-regular";
+  src: url(../assets/fonts/PPNeueMachina-InktrapRegular.woff) format("woff"),
+    url(../assets/fonts/PPNeueMachina-InktrapRegular.woff2) format("woff2");
+  font-weight: 375;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "inkrapt-ultrabold";
+  src: url(../assets/fonts/PPNeueMachina-InktrapUltrabold.woff) format("woff"),
+    url(../assets/fonts/PPNeueMachina-InktrapUltrabold.woff2) format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+html {
+  background-color: rgba(226, 226, 226, 1);
+  font-size: 16px;
+  color: rgba(27, 32, 33, 1);
+  font-optical-sizing: auto;
+  font-style: normal;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+li {
+  list-style: none;
+}
+h1 {
+  display: block;
+  width: 100%;
+  text-align: start;
+  color: rgb(27, 32, 33);
+  font-family: "inkrapt-ultrabold";
+  text-transform: uppercase;
+}
+h2 {
+  display: block;
+  width: 100%;
+  text-align: start;
+  color: rgb(27, 32, 33);
+  font-family: "inkrapt-regular";
+}
+p {
+  color: rgba(27, 32, 33, 0.9);
+  font-family: "Work Sans", serif;
+  font-weight: 400;
+}
+@media screen and (max-width: 430px) {
+    
+}
