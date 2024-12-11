@@ -422,9 +422,12 @@ button:hover {
         width: 100%;
         gap: 10px;
     }
+    .toolkit__tool-level{
+        justify-content: space-evenly;
+    }
 
     .toolkit__tool-level>span {
-        flex: 1 1 30%;
+        flex: 0 1 auto;
         font-size: clamp(0.6rem, -0.0781rem + 0.7942vw, 0.875rem);
         font-weight: 300;
     }
@@ -453,7 +456,9 @@ button:hover {
     .toolkit__tool-level-indicator--advanced div {
         background-color: rgb(49, 168, 79);
     }
-
+    .controls{
+        display: none;
+    }
     .work {
         flex-flow: column nowrap;
         justify-content: start;
@@ -548,7 +553,8 @@ button:hover {
         background-color: var(--bg-color);
     }
 
-    .work__item-view-less {
+    .work__item-view-less,
+    .work__item-view-more {
         display: none;
         margin-left: auto;
         padding: 1rem;
@@ -557,8 +563,6 @@ button:hover {
 
     .work__item-view-more {
         display: inline;
-        margin-left: auto;
-        padding: 1rem;
     }
 
     #work__item-view-code {
@@ -581,7 +585,7 @@ button:hover {
         font-size: 1rem;
     }
 
-    .work__item-view-details button .material-symbols-outlined {
+    .work__item-view-details button span {
         vertical-align: middle;
         font-size: 1.25rem;
     }
@@ -599,12 +603,12 @@ button:hover {
         gap: 2.5rem;
         order: 4;
         overflow: hidden;
-        transition: max-height 750ms linear;
+        transition: max-height 400ms linear;
 
     }
 
     .work__item-details.expand {
-        max-height: 1550px;
+        max-height: 2000px;
     }
 
     .work__item-details-presentation {
@@ -671,7 +675,7 @@ button:hover {
         flex-flow: row nowrap;
         justify-content: center;
         align-items: center;
-        width: 100%;
+        width: calc((100% - 3rem) / 4);
         height: clamp(12rem, 2.1372rem + 11.5523vw, 16rem);
         background-color: transparent;
         border-radius: 1rem;
@@ -940,7 +944,9 @@ button:hover {
         color: rgb(27, 32, 33);
         font-size: 4rem;
     }
-
+    .contact__description{
+        color: rgb(27, 33, 32);
+    }
     .contact__social-network,
     .contact__form-wrapper {
         flex-flow: row nowrap;

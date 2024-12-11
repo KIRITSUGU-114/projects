@@ -54,6 +54,24 @@ themeToggle.addEventListener("click", () => {
       ? "./assets/images/social-networks/social-networks_github--white.webp"
       : "./assets/images/social-networks/social-networks_github.webp";
   github.setAttribute("src", githubNewpath);
+  
+  const linkedinMobile = document.getElementById("hero__buttons-linkedin--mobile");
+  const linkedinMobileCurretPath = linkedinMobile.getAttribute("src");
+  const linkedinMobileNewpath =
+    linkedinMobileCurretPath ===
+    "./assets/images/social-networks/social-networks_linkedin.webp"
+      ? "./assets/images/social-networks/social-networks_linkedin--white.webp"
+      : "./assets/images/social-networks/social-networks_linkedin.webp";
+  linkedinMobile.setAttribute("src", linkedinMobileNewpath);
+
+  const githubMobile = document.getElementById("hero__buttons-github--mobile");
+  const githubMobileCurretPath = githubMobile.getAttribute("src");
+  const githubMobileNewpath =
+    githubMobileCurretPath ===
+    "./assets/images/social-networks/social-networks_github.webp"
+      ? "./assets/images/social-networks/social-networks_github--white.webp"
+      : "./assets/images/social-networks/social-networks_github.webp";
+  githubMobile.setAttribute("src", githubMobileNewpath);
 
   const code = document.getElementById("work__item-view-code");
   const codeCurretPath = code.getAttribute("src");
@@ -72,4 +90,6 @@ themeToggle.addEventListener("click", () => {
         document.getElementById('header__color-schema--light').classList.remove('header__color-schema--current')
     }
 });
+
+
 
