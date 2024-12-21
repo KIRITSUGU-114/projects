@@ -90,6 +90,3 @@ themeToggle.addEventListener("click", () => {
         document.getElementById('header__color-schema--light').classList.remove('header__color-schema--current')
     }
 });
-
-
-
